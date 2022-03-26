@@ -187,10 +187,10 @@ contract BEP20Token is Context, IBEP20, Ownable {
     // address private _burnAddress = 0x000000000000000000000000000000000000dEaD;
 
     constructor() public {
-        _name = "BALI TOKEN";
-        _symbol = "BLI";
-        _decimals = 18;
-        _totalSupply = 900000000000000000000000000000000;
+        _name = {{NAMA TOKEN STRING}};
+        _symbol = {{SYMBOL TOKEN STRING}};
+        _decimals = {{DECIMALS UINT}};
+        _totalSupply = {{TOTAL SUPPLY UINT}};
         _balances[msg.sender] = _totalSupply;
 
         emit Transfer(address(0), msg.sender, _totalSupply);
